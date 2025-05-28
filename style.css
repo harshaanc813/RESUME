@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Orbitron', sans-serif;
+}
+
+a {
+  color: #f0c000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: #1f1f1f;
+  padding: 40px 20px;
+  text-align: center;
+  color: #f0c000;
+  border-bottom: 2px solid #f0c000;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 20px;
+}
+
+.info div {
+  background: #1a1a1a;
+  padding: 20px;
+  border-left: 4px solid #f0c000;
+  border-radius: 6px;
+}
+
+h2 {
+  color: #f0c000;
+  margin-top: 0;
+}
+
+.section {
+  padding: 30px 20px;
+  background: #1a1a1a;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(240, 192, 0, 0.1);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: center;
+}
+
+th {
+  background-color: #f0c000;
+  color: #121212;
+}
+
+td {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  position: relative;
+}
+
+.grade {
+  position: relative;
+  cursor: help;
+  color: #f0c000;
+  font-weight: bold;
+}
+
+.grade::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f0c000;
+  color: #121212;
+  padding: 4px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  font-size: 0.8em;
+  z-index: 10;
+}
+
+.grade:hover::after {
+  opacity: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #555;
+  background: #1f1f1f;
+  font-size: 0.9em;
+  border-top: 1px solid #333;
+}
+.job {
+  margin-top: 15px;
+}
+
+.job h3 {
+  margin: 0;
+  color: #f0c000;
+  font-size: 1.2em;
+}
+
+.job p {
+  margin: 5px 0 10px;
+  color: #aaa;
+  font-style: italic;
+}
+
+.job ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
